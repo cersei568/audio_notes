@@ -10,7 +10,7 @@ An elegant **Streamlit-powered app** that allows you to:
 
 This project demonstrates **AI-assisted media processing** and **semantic search with embeddings** — presented in a clean, professional UI.  
 
-👉 Live Demo: [Streamlit Cloud](https://your-deployment-link.com)  
+👉 Live Demo: [Streamlit Cloud](https://audionotesv8.streamlit.app)  
 👉 Repository: [GitHub](https://github.com/cersei568/audio_notes.git)
 
 ---
