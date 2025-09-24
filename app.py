@@ -1,6 +1,6 @@
 from io import BytesIO
 import streamlit as st
-from audiorecorder import audiorecorder  # type: ignore
+from st_audiorec import st_audiorec
 from dotenv import dotenv_values
 from hashlib import md5
 from openai import OpenAI
@@ -460,10 +460,10 @@ with add_tab:
     col1, col2 = st.columns([2, 1])
     
     with col1:
-        note_audio = audiorecorder(
-            start_prompt="🎤 Start Recording",
-            stop_prompt="⏹️ Stop Recording",
-        )
+        note_audio = st_audiorec()
+        if note_audio is not None:
+            st.audio(note_audio, format="audio/wav")
+        
     
     with col2:
         if st.session_state.get("note_audio_bytes"):

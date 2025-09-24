@@ -1,5 +1,5 @@
 streamlit==1.39.0
-streamlit-audiorecorder==0.0.3
+streamlit-audiorec==0.1.3
 python-dotenv==1.0.1
 openai==1.50.2
 qdrant-client==1.12.1
